@@ -32,9 +32,8 @@
         cursor: pointer;
     }
     .infos--button{
-        // position: absolute;
-        bottom: 50rem;
-        transform: translate(0%);
+        position: absolute;
+        right: 50rem;
     }
     .additional--infos{
         background-color: rgba(211, 211, 211, .85);
