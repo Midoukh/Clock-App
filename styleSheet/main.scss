@@ -1,0 +1,74 @@
+@import 'phone';
+@import 'desktop';
+
+*, :after, :before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+.container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.display--gretting{
+    color: white;
+    display: flex;
+    align-items: flex-start;
+}
+.gretting img{
+    margin-right: .5rem;
+}
+.gretting{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.display--time{
+    display: flex;
+    align-items: flex-end;
+}
+.display--time h3{
+    font-weight: lighter;
+}
+.display--time h1{
+    font-weight: 700;
+    font-size: 7rem;
+}
+.display--address h5{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2em;
+}
+.expand--infos{
+    border: none;
+    color: rgb(17, 17, 17);
+    background-color: white;
+    padding: .5vw 1.5vw .5vw 1.5vw;
+    border-radius: 2rem;
+    display: flex;
+}
+.expand--infos:hover{
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+}
+.bi-chevron-up, .bi-chevron-down{
+    fill: white;
+}
+.up, .down{
+    background-color: black;
+    margin-left: .5rem;
+    padding: .2vw;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border-radius: 50%;
+
+}
+.bi-chevron-up, .up{
+    display: none;
+}

@@ -1,0 +1,68 @@
+@media screen and (max-width: 414px){
+    body{
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url('../img/morning.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .generate--quotes{
+        width: 90%;
+        display: flex;
+        color: white;   
+        margin-bottom: 5rem;
+    }
+    .quote{
+        margin-right: 1rem;
+    }
+    .quote p{
+        min-width: 100%;
+        text-shadow: 0vw 0vw .85vw rgba(100, 100, 100, .4);
+    }
+  
+    .quote h5{
+        font-weight: 700;
+        text-shadow: 0vw 0vw .85vw rgba(100, 100, 100, .4);
+        width: 100%;
+    }
+    .bi-arrow-repeat{
+        width: 3em;
+        height: 3em;
+        cursor: pointer;
+    }
+    .display--time h1{
+        font-weight: 700;
+        font-size: 5rem;
+    }
+    .expand--infos{
+        padding: .5vw 1.5vw .5vw 1.5vw;
+    }
+    .additional--infos{
+        background-color: rgba(211, 211, 211, .85);
+        max-width: 100%;
+        max-height: 100%;
+        padding: 2rem 3rem 2rem 3rem;
+        // margin-top: 2rem;
+        color: black;
+        font-size: 1em;
+        display: none;
+    }
+    .additional--infos h5{
+        opacity: .8;
+    }
+    .additional--infos h1{
+        font-weight: 700;
+    }
+    .additional--infos h1, .additional--infos h5{
+        width: 100%;
+    }
+    .left--infos>*, .right--infos>*{
+        display: flex;
+        align-items: center;
+    }
+    .left--infos >*, .right--infos>*{
+        margin-bottom: 2rem;
+        display: flex;
+    }
+    
+}
