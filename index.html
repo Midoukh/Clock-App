@@ -20,7 +20,7 @@
                 <p>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” </p>
                 <h5>Martin Fowler</h5>
             </div>
-            <svg width="1.8em" height="1.8em" viewBox="0 0 16 16" class="bi bi-arrow-repeat" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-repeat" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
                 <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
               </svg>
@@ -30,15 +30,15 @@
         
             <div class="display--gretting">
                 <img src="./img/sun.svg#Capa_1" id="sun">
-                <!-- <img src="./img/moon.svg#Capa_1" id="moon"> -->
+                <img src="./img/moon.svg#Capa_1" id="moon">
                 <h5 class="gretting-text">Good Morning</h5>
             </div>
             <div class="display--time">
-                <h1>11:20</h1>
+                <h1><span id="hour">11</span><span id="colon">:</span><span id="minut">20</span></h1>
                 <h3 class="Time--zone">BST</h3>
             </div>
             <div class="display--address">
-                <h5>In <span>Jijel, DZ</span><span class="country--flag"></span></h5>
+                <h5>In <span><span id="city">Jijel</span>, <span id="country">DZ</span></span><img id="flag" alt="country--flag"></h5>
             </div>
         </section>
 
@@ -59,7 +59,7 @@
         <div class="left--infos">
             <div class="current--timezone">
                 <h5>Current TimeZone</h5>
-                <h1>Europe/Londan</h1>
+                <h1><span id="continent">Europe</span>/<span id="country-name"></span></h1>
             </div>
             <div class="day-of-theYear">
                 <h5>Day Of the year</h5>

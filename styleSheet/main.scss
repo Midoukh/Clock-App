@@ -56,6 +56,7 @@
     border: 1px white solid;
     color: white;
 }
+
 .bi-chevron-up, .bi-chevron-down{
     fill: white;
 }
@@ -65,10 +66,19 @@
     padding: .2vw;
     width: 1.5rem;
     height: 1.5rem;
-
     border-radius: 50%;
-
+}
+.infos--button{
+    outline: none;
 }
 .bi-chevron-up, .up{
+    display: none;
+}
+#flag{
+    height: 4%;
+    width: 4%;
+    margin-left: .4rem;
+}
+.hide{
     display: none;
 }

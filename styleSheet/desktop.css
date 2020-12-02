@@ -7,7 +7,6 @@
     background-size: cover;
   }
   .generate--quotes {
-    max-width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -21,6 +20,7 @@
   }
   .quote {
     margin-right: 1rem;
+    max-width: 50%;
   }
   .quote p {
     max-width: 100%;
@@ -33,11 +33,13 @@
   .bi-arrow-repeat {
     max-width: 5%;
     cursor: pointer;
+    fill: coral;
   }
   .infos--button {
-    bottom: 50rem;
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
+    position: absolute;
+    right: 10rem;
+    top: 26.5rem;
+    outline: none;
   }
   .additional--infos {
     background-color: rgba(211, 211, 211, 0.85);
@@ -51,7 +53,31 @@
     margin-top: 2rem;
     -ms-flex-line-pack: center;
         align-content: center;
+    -webkit-animation-name: showing;
+            animation-name: showing;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  .hide-info {
     display: none;
+  }
+  @-webkit-keyframes showing {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showing {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .additional--infos h5 {
     opacity: .8;

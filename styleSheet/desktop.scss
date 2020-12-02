@@ -8,7 +8,6 @@
         
     }
     .generate--quotes{
-        max-width: 40%;
         display: flex;
         color: white;   
         margin-bottom: 10rem;
@@ -19,6 +18,8 @@
     }
     .quote{
         margin-right: 1rem;
+        max-width: 50%;
+
     }
     .quote p{
         max-width: 100%;
@@ -30,11 +31,15 @@
     .bi-arrow-repeat{
         max-width: 5%;
         cursor: pointer;
+        fill: coral;
     }
     .infos--button{
         position: absolute;
-        right: 50rem;
+        right: 10rem;
+        top: 26.5rem;
+        outline: none;
     }
+    
     .additional--infos{
         background-color: rgba(211, 211, 211, .85);
         display: flex;
@@ -43,7 +48,16 @@
         padding: 2rem 3rem 2rem 3rem;
         margin-top: 2rem;
         align-content: center;
+        animation-name: showing;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    .hide-info{
         display: none;
+    }
+    @keyframes showing {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
     }
     .additional--infos h5{
         opacity: .8;
