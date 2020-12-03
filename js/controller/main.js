@@ -94,7 +94,6 @@ function updateTime(){
     //update background image and the moon or sun when time change
     const isDay = hours > 6 && hours <= 20
     
-    
         //morning
         if (isDay){
             document.body.style.backgroundImage = "url('../img/morning.jpg')"
@@ -139,17 +138,18 @@ function updateLocation(city, country, flag, continent, countryName){
 
 //show additional infos on click
 function expandInfos(){
-    // let additionalInfosStyle = elements.additionalInfos.style.display
-    // let chevronUpStyle = elements.chevronUp.style.display
-    // let chevronDownStyle = elements.chevronDown.style.display
+    if (elements.expandInfosBtn.querySelector('span').textContent === 'More'){
+        elements.expandInfosBtn.querySelector('span').textContent = 'Less'
+        document.querySelector('.down').style.display = 'none'
+        document.querySelector('.up').style.display = 'flex'
+        elements.chevronUp.style.display = 'flex'
 
-    // if (additionalInfosStyle === 'none'){
-     
-
-    // }
-    // else{
-
-    // }
+    }else{
+        elements.expandInfosBtn.querySelector('span').textContent = 'More'
+        document.querySelector('.down').style.display = 'flex'
+        document.querySelector('.up').style.display = 'none'
+        elements.chevronUp.style.display = 'none'
+    }
     elements.additionalInfos.classList.toggle('hide-info')
 }
 
